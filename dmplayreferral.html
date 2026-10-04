@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#ef5350">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+
+
+<!-- ADD YOUR NEW GOOGLE ANALYTICS TAG HERE -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KWRX124K1F"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KWRX124K1F');
+</script>
+
+
+  <title>DM Play Referral – Invite Friends &amp; Earn Rewards | Dmplay Game</title>
+  <link rel="canonical" href="https://dmplaygame.net/dmplayreferral.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DM Play Referral – Invite Friends &amp; Earn Rewards">
+  <meta property="og:description" content="Share your DM Play referral link and earn rewards when friends register and play. Free to join. 18+ only.">
+  <meta property="og:url" content="https://dmplaygame.net/dmplayreferral.html">
+  <meta property="og:image" content="https://dmplaygame.net/dmplay.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DM Play Referral – Invite &amp; Earn">
+  <meta name="twitter:description" content="Share your referral link, invite friends and earn rewards with DM Play.">
+  <meta name="twitter:image" content="https://dmplaygame.net/dmplay.png">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <meta name="description" content="Share your DM Play referral link and earn rewards when friends register and play. Simple, free and tracked in real time. 18+ only.">
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: #ffffff; color: #1a1a1a; line-height: 1.6; min-height: 100vh;
+      overflow-x: hidden; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeSpeed;
+    }
+    img { max-width: 100%; height: auto; display: block; border: 0; }
+    a { text-decoration: none; color: inherit; }
+    .container { width: 100%; max-width: 1100px; margin: 0 auto; padding: 0 1rem; }
+
+    .header { background: #ef5350; color: #fff; padding: 0.6rem 0; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; flex-wrap: wrap; }
+    .logo-link { display: inline-block; line-height: 0; }
+    .logo { height: 44px; width: auto; max-width: 160px; object-fit: contain; }
+    .logo-text { font-weight: 800; font-size: 1.2rem; color: #ffffff; display: none; }
+
+    .nav { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem 0.6rem; font-size: 0.85rem; }
+    .nav a { color: #ffebee; position: relative; padding: 0.45rem 0.85rem; border-radius: 6px; transition: color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease; }
+    .nav a:hover, .nav a:focus { color: #ffffff; background: rgba(255, 255, 255, 0.15); box-shadow: 0 0 8px rgba(255, 255, 255, 0.3); }
+    .nav a.active { color: #ffffff; font-weight: 700; background: rgba(255, 255, 255, 0.22); box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2); }
+
+    .hamburger { display: none; background: transparent; border: 0; cursor: pointer; padding: 0.5rem; margin-left: auto; border-radius: 8px; transition: background 0.2s ease; }
+    .hamburger:hover, .hamburger:focus { background: rgba(255,255,255,0.2); outline: none; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: #ffebee; margin: 5px 0; border-radius: 2px; transition: transform 0.3s ease, opacity 0.3s ease, background 0.2s ease; }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); background: #ffffff; }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); background: #ffffff; }
+
+    .hero { background: linear-gradient(145deg, #ef5350, #e57373); color: #fff; padding: 2rem 0 2.5rem; text-align: center; }
+    .hero h1 { font-size: 1.8rem; font-weight: 800; line-height: 1.25; margin-bottom: 0.6rem; }
+    .hero .updated { font-size: 0.9rem; color: #ffebee; font-style: italic; }
+
+    section { padding: 2rem 0; }
+    .section-title { font-size: 1.5rem; font-weight: 800; color: #ef5350; text-align: center; margin-bottom: 1.5rem; }
+
+    .card { background: #ffffff; border-radius: 1rem; padding: 1.25rem; box-shadow: 0 4px 16px rgba(239,83,80,0.08); border: 1px solid #ffcdd2; }
+    .card + .card { margin-top: 1.25rem; }
+    .card p { font-size: 0.98rem; color: #1a1a1a; margin-bottom: 0.9rem; }
+    .card p:last-child { margin-bottom: 0; }
+    .card ul { margin: 0.75rem 0 0.9rem 1.25rem; }
+    .card ul li { font-size: 0.98rem; margin-bottom: 0.5rem; }
+    .card strong { color: #ef5350; }
+
+    .num-list { list-style: none; counter-reset: num; margin-top: 0.75rem; }
+    .num-list li { counter-increment: num; position: relative; padding-left: 2.3rem; margin-bottom: 1rem; font-size: 0.98rem; line-height: 1.55; }
+    .num-list li::before { content: counter(num); position: absolute; left: 0; top: 0.05rem; width: 1.6rem; height: 1.6rem; background: #ef5350; color: #fff; font-weight: 700; font-size: 0.8rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+    .num-list li strong { color: #ef5350; }
+
+    .content-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 0.75rem; border: 1px solid #ffcdd2; background: #fff5f5; margin-top: 1rem; }
+    .content-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; min-width: 460px; }
+    .content-table thead th { background: #ef5350; color: #ffffff; font-weight: 800; font-size: 0.78rem; letter-spacing: 0.04em; text-transform: uppercase; padding: 0.85rem 1rem; text-align: left; white-space: nowrap; }
+    .content-table tbody td { padding: 0.85rem 1rem; border-bottom: 1px solid #ffcdd2; vertical-align: middle; color: #1a1a1a; }
+    .content-table tbody tr:last-child td { border-bottom: none; }
+    .content-table tbody tr:nth-child(even) { background: #fffafa; }
+    .content-table tbody tr:hover { background: #ffebee; }
+    .content-table tbody td:first-child { font-weight: 700; color: #b71c1c; }
+    .content-table tbody td:last-child { font-weight: 700; color: #1b5e20; }
+
+    .note { background: #fff8e1; border-left: 4px solid #ffb300; padding: 0.75rem 1rem; border-radius: 6px; font-size: 0.85rem; color: #5d4037; margin-top: 1rem; }
+
+    .faq-item { background: #fff5f5; border: 1px solid #ffcdd2; border-radius: 0.75rem; padding: 1rem 1.15rem; margin-bottom: 0.85rem; }
+    .faq-item strong { display: block; color: #b71c1c; font-size: 0.98rem; margin-bottom: 0.4rem; }
+    .faq-item p { font-size: 0.94rem; margin: 0; color: #333; }
+
+    .link-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 0.75rem; border: 1px solid #ffcdd2; background: #fff5f5; margin-top: 1rem; }
+    .link-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; min-width: 560px; }
+    .link-table thead th { background: #ffebee; color: #ef5350; font-weight: 800; font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.85rem 1rem; text-align: left; border-bottom: 2px solid #ef5350; white-space: nowrap; }
+    .link-table tbody td { padding: 0.85rem 1rem; border-bottom: 1px solid #ffcdd2; vertical-align: middle; color: #1a1a1a; }
+    .link-table tbody tr:last-child td { border-bottom: none; }
+    .link-table tbody tr:hover { background: #fff5f5; }
+    .link-table tbody td:first-child { font-weight: 700; color: #ef5350; }
+    .link-table code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.82rem; background: #ffebee; color: #1a1a1a; padding: 0.2rem 0.55rem; border-radius: 6px; display: inline-block; white-space: nowrap; }
+    .link-table tbody td:last-child a { color: #ef5350; font-weight: 700; transition: color 0.2s; white-space: nowrap; }
+    .link-table tbody td:last-child a:hover { color: #b71c1c; text-decoration: underline; }
+
+    .tag { display: inline-block; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; padding: 0.25rem 0.7rem; border-radius: 40px; white-space: nowrap; }
+    .tag-core   { background: #ffcdd2; color: #b71c1c; }
+    .tag-game   { background: #e3f2fd; color: #1565c0; }
+    .tag-wallet { background: #fff3e0; color: #e65100; }
+    .tag-extra  { background: #f3e5f5; color: #6a1b9a; }
+
+    .footer { background: #ef5350; color: #ffebee; padding: 2.5rem 0 1.5rem; margin-top: 2.5rem; }
+    .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.75rem; margin-bottom: 2rem; }
+    .footer-col h4 { color: #ffffff; font-size: 1rem; font-weight: 700; margin-bottom: 0.85rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.3); }
+    .footer-col p { font-size: 0.88rem; line-height: 1.65; margin-bottom: 0.6rem; }
+    .footer-col p:last-child { margin-bottom: 0; }
+    .footer-col a { color: #ffebee; transition: color 0.2s; }
+    .footer-col a:hover { color: #ffffff; }
+    .footer-links { list-style: none; }
+    .footer-links li { margin-bottom: 0.5rem; }
+    .footer-links a { font-size: 0.88rem; display: inline-block; transition: color 0.2s, padding-left 0.2s; line-height: 1.5; }
+    .footer-links a:hover { color: #ffffff; padding-left: 4px; }
+    .footer-links a::before { content: "› "; color: #ffffff; font-weight: 700; margin-right: 2px; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.3); padding-top: 1.2rem; text-align: center; font-size: 0.85rem; color: #ffebee; }
+    .footer-bottom span { display: block; margin-bottom: 0.3rem; }
+    .footer-bottom span:last-child { margin-bottom: 0; }
+
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 1.5rem; }
+      .hero { padding: 1.5rem 0 2rem; }
+      .section-title { font-size: 1.3rem; margin-bottom: 1.2rem; }
+      .card { padding: 1rem; }
+      .header-inner { flex-direction: row; align-items: center; justify-content: space-between; flex-wrap: nowrap; gap: 0.5rem; position: relative; }
+      .logo { height: 38px; }
+      .hamburger { display: block; }
+      .nav { display: none; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 0; background: #ef5350; padding: 0.5rem 0; margin-top: 0.4rem; border-radius: 0 0 12px 12px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); z-index: 200; font-size: 0.95rem; }
+      .nav.open { display: flex; }
+      .nav a { color: #ffebee; padding: 0.85rem 1.25rem; border-bottom: 1px solid rgba(255, 255, 255, 0.15); text-align: left; width: 100%; border-radius: 0; background: transparent; box-shadow: none; font-weight: 500; }
+      .nav a:last-child { border-bottom: none; }
+      .nav a:hover, .nav a:focus { background: rgba(255,255,255,0.15); color: #ffffff; box-shadow: none; }
+      .nav a.active { background: rgba(255,255,255,0.22); color: #ffffff; font-weight: 700; padding: 0.85rem 1.25rem; box-shadow: inset 3px 0 0 #ffffff, 0 0 12px rgba(255, 255, 255, 0.35); }
+      .footer { padding: 2rem 0 1.25rem; }
+      .footer-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+    }
+
+    @media (max-width: 380px) {
+      .hero h1 { font-size: 1.3rem; }
+      .section-title { font-size: 1.15rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+    }
+
+    .content-visibility { content-visibility: auto; contain-intrinsic-size: 0 500px; }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo-link" aria-label="Dmplay Game Home">
+      <img src="dmplay.png" alt="Dmplay Game Logo" class="logo" width="160" height="44" loading="eager" decoding="async" fetchpriority="high" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+      <span class="logo-text">Dmplay Game</span>
+    </a>
+
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-controls="primaryNav" aria-expanded="false" type="button">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="primaryNav" aria-label="Main navigation">
+      <a href="index.html">Dmplay</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="responsiblegaming.html">Responsible Gaming</a>
+      <a href="contactus.html">Contact Us</a>
+      <a href="blogs.html">Blogs</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1>DM Play Referral</h1>
+    <p class="updated">Invite Friends &amp; Earn Rewards</p>
+  </div>
+</section>
+
+<main class="container">
+
+  <!-- INTRO -->
+  <section class="content-visibility">
+    <div class="card">
+      <p>The <strong>DM Play Referral Program</strong> lets you earn rewards by inviting friends to join Dmplay Game. Every registered user gets a unique referral link. Share it, and when your friends register and play, you earn referral rewards directly in your account.</p>
+      <ul>
+        <li><strong>Free to join</strong> — no signup cost</li>
+        <li><strong>Unique referral link</strong> generated automatically</li>
+        <li><strong>Real-time tracking</strong> in your dashboard</li>
+        <li><strong>Rewards credited automatically</strong> when your invite is active</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- HOW REFERRAL WORKS -->
+  <section class="content-visibility">
+    <h2 class="section-title">How DM Play Referral Works</h2>
+    <div class="card">
+      <ol class="num-list">
+        <li><strong>Login</strong> to your <a href="dmplaylogin.html">DM Play account</a>.</li>
+        <li>Open the <strong>Referral / Invite &amp; Earn</strong> section.</li>
+        <li><strong>Copy your unique referral link.</strong></li>
+        <li>Share it with friends on <strong>WhatsApp, Telegram, Facebook or Instagram</strong>.</li>
+        <li>When a friend registers with your link and plays, you earn a <strong>referral reward</strong>.</li>
+      </ol>
+      <p>All referral activity can be tracked in real time inside your Dmplay dashboard.</p>
+    </div>
+  </section>
+
+  <!-- REFERRAL REWARDS -->
+  <section class="content-visibility">
+    <h2 class="section-title">Referral Rewards</h2>
+    <div class="card">
+      <p>Referral rewards are credited based on the activity of users you invite. The exact reward amount and conditions may change depending on current promotional rules. Check the app for the latest active referral offer.</p>
+      <div class="content-table-wrap">
+        <table class="content-table">
+          <thead>
+            <tr>
+              <th>Referral Level</th>
+              <th>Activity Required</th>
+              <th>Reward</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Level 1</td><td>Friend registers &amp; deposits</td><td>Referral bonus</td></tr>
+            <tr><td>Level 2</td><td>Friend plays games</td><td>Activity commission</td></tr>
+            <tr><td>Level 3</td><td>Friend invites others</td><td>Team commission</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="note">Reward structures may change. Visit dmplaygame.net or check the app for the latest referral terms. 18+ • Terms apply.</div>
+    </div>
+  </section>
+
+  <!-- WHY JOIN -->
+  <section class="content-visibility">
+    <h2 class="section-title">Why Join DM Play Referral?</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Completely free</strong> — no fee to participate</li>
+        <li><strong>Easy to share</strong> — just send your referral link</li>
+        <li><strong>Track everything</strong> — see your referrals and rewards live</li>
+        <li><strong>Automatic rewards</strong> — no manual claim needed</li>
+        <li><strong>Mobile-friendly</strong> — manage referrals from your phone</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- RULES -->
+  <section class="content-visibility">
+    <h2 class="section-title">Referral Rules &amp; Notes</h2>
+    <div class="card">
+      <ul>
+        <li>Only registered Dmplay users can participate.</li>
+        <li>Referrals are valid only when the invited user completes the required activity.</li>
+        <li>Self-referrals, fake accounts, and duplicate accounts are not allowed.</li>
+        <li>Rewards may be adjusted or cancelled in case of abuse or policy violation.</li>
+        <li>Terms may change without prior notice — always check dmplaygame.net for the latest rules.</li>
+        <li>Only users aged 18+ are eligible.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="content-visibility">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <div class="card">
+      <div class="faq-item">
+        <strong>How do I get my DM Play referral link?</strong>
+        <p>Log in to your Dmplay account and open the Referral or Invite &amp; Earn section. Your unique referral link is shown there — copy and share it.</p>
+      </div>
+      <div class="faq-item">
+        <strong>Is the Referral Program free?</strong>
+        <p>Yes. The DM Play Referral Program is completely free to join.</p>
+      </div>
+      <div class="faq-item">
+        <strong>When do I get my referral reward?</strong>
+        <p>Rewards are credited automatically based on the activity of your invited friends, according to the current referral terms.</p>
+      </div>
+      <div class="faq-item">
+        <strong>Can I refer multiple people?</strong>
+        <p>Yes. You can invite as many people as you want using your referral link.</p>
+      </div>
+      <div class="faq-item">
+        <strong>Can I refer myself?</strong>
+        <p>No. Self-referrals are not allowed and may result in cancellation of rewards.</p>
+      </div>
+      <div class="faq-item">
+        <strong>Where can I see my referral activity?</strong>
+        <p>All referral activity is visible in your Dmplay dashboard under the Referral section.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LINK DIRECTORY -->
+  <section class="content-visibility">
+    <h2 class="section-title">Complete Link Directory</h2>
+    <div class="card">
+      <p>Every <a href="index.html">Dmplay</a> URL in one clean table — with type tags and direct access.</p>
+      <div class="link-table-wrap">
+        <table class="link-table">
+          <thead>
+            <tr>
+              <th>Page Name</th>
+              <th>Type</th>
+              <th>URL Slug</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dmplay Login</td>
+              <td><span class="tag tag-core">Core</span></td>
+              <td><code>/dmplaylogin.html</code></td>
+              <td><a href="dmplaylogin.html">Visit →</a></td>
+            </tr>
+            <tr>
+              <td>Dmplay Registration</td>
+              <td><span class="tag tag-core">Core</span></td>
+              <td><code>/dmplayregistration.html</code></td>
+              <td><a href="dmplayregistration.html">Visit →</a></td>
+            </tr>
+            <tr>
+              <td>Dmplay App</td>
+              <td><span class="tag tag-core">Core</span></td>
+              <td><code>/dmplayapp.html</code></td>
+              <td><a href="dmplayapp.html">Visit →</a></td>
+            </tr>
+            <tr>
+              <td>Dmplay Game</td>
+              <td><span class="tag tag-game">Game</span></td>
+              <td><code>/dmplaygame.html</code></td>
+              <td><a href="dmplaygame.html">Visit →</a></td>
+            </tr>
+            <tr>
+              <td>Dmplay WinGo</td>
+              <td><span class="tag tag-game">Game</span></td>
+              <td><code>/dmplaywingo.html</code></td>
+              <td><a href="dmplaywingo.html">Visit →</a></td>
+            </tr>
+            <tr>
+              <td>Dmplay Withdrawal</td>
+              <td><span class="tag tag-wallet">Wallet</span></td>
+              <td><code>/dmplaywithdrawal.html</code></td>
+              <td><a href="dmplaywithdrawal.html">Visit →</a></td>
+            </tr>
+            <tr>
+              <td>Dmplay Deposit</td>
+              <td><span class="tag tag-wallet">Wallet</span></td>
+              <td><code>/dmplaydeposit.html</code></td>
+              <td><a href="dmplaydeposit.html">Visit →</a></td>
+            </tr>
+            <tr>
+              <td>Dmplay Agent</td>
+              <td><span class="tag tag-extra">Extra</span></td>
+              <td><code>/dmplayagent.html</code></td>
+              <td><a href="dmplayagent.html">Visit →</a></td>
+            </tr>
+            <tr>
+              <td>Dmplay Referral</td>
+              <td><span class="tag tag-extra">Extra</span></td>
+              <td><code>/dmplayreferral.html</code></td>
+              <td><a href="dmplayreferral.html">Visit →</a></td>
+            </tr>
+            <tr>
+              <td>WinGo</td>
+              <td><span class="tag tag-game">Game</span></td>
+              <td><code>/wingo.html</code></td>
+              <td><a href="wingo.html">Visit →</a></td>
+            </tr>
+            <tr>
+              <td>K3</td>
+              <td><span class="tag tag-game">Game</span></td>
+              <td><code>/k3.html</code></td>
+              <td><a href="k3.html">Visit →</a></td>
+            </tr>
+            <tr>
+              <td>5D</td>
+              <td><span class="tag tag-game">Game</span></td>
+              <td><code>/5d.html</code></td>
+              <td><a href="5d.html">Visit →</a></td>
+            </tr>
+            <tr>
+              <td>Aviator</td>
+              <td><span class="tag tag-game">Game</span></td>
+              <td><code>/aviator.html</code></td>
+              <td><a href="aviator.html">Visit →</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-col">
+        <h4>Dmplay Game</h4>
+        <p><a href="index.html"><strong>Dmplay Game</strong></a> — Your trusted guide for Dmplay Login, Games, App, Registration and latest updates. Clear, reliable information in one place.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Helpful Guides</h4>
+        <ul class="footer-links">
+          <li><a href="dmplaylogin.html">DM Play Login Help</a></li>
+          <li><a href="dmplayregistration.html">Registration Guide</a></li>
+          <li><a href="dmplayapp.html">APK Installation Guide</a></li>
+          <li><a href="dmplayagent.html">Agent Program</a></li>
+          <li><a href="dmplayreferral.html">Referral Program</a></li>
+          <li><a href="responsiblegaming.html">Responsible Gaming</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Legal &amp; Important Pages</h4>
+        <ul class="footer-links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="responsiblegaming.html">Responsible Gaming</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 <a href="index.html">Dmplay Game</a></span>
+      <span>Gaming involves financial risk. Play responsibly. 18+ only.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- HAMBURGER MENU SCRIPT -->
+<script>
+  (function () {
+    var hamburgerBtn = document.getElementById('hamburgerBtn');
+    var primaryNav = document.getElementById('primaryNav');
+    if (!hamburgerBtn || !primaryNav) return;
+
+    function openMenu() {
+      primaryNav.classList.add('open');
+      hamburgerBtn.classList.add('open');
+      hamburgerBtn.setAttribute('aria-expanded', 'true');
+    }
+    function closeMenu() {
+      primaryNav.classList.remove('open');
+      hamburgerBtn.classList.remove('open');
+      hamburgerBtn.setAttribute('aria-expanded', 'false');
+    }
+    function toggleMenu() {
+      if (primaryNav.classList.contains('open')) closeMenu();
+      else openMenu();
+    }
+
+    hamburgerBtn.addEventListener('click', function (e) { e.stopPropagation(); toggleMenu(); });
+    primaryNav.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () { closeMenu(); });
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && primaryNav.classList.contains('open')) {
+        closeMenu(); hamburgerBtn.focus();
+      }
+    });
+    document.addEventListener('click', function (e) {
+      if (!primaryNav.classList.contains('open')) return;
+      if (primaryNav.contains(e.target) || hamburgerBtn.contains(e.target)) return;
+      closeMenu();
+    });
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 640 && primaryNav.classList.contains('open')) closeMenu();
+    });
+  })();
+</script>
+
+<!-- BACK TO TOP BUTTON -->
+<button id="backToTop" aria-label="Back to top" style="position:fixed;bottom:20px;right:20px;width:46px;height:46px;border-radius:50%;background:#ef5350;color:#fff;border:0;cursor:pointer;display:none;font-size:22px;line-height:1;box-shadow:0 4px 12px rgba(0,0,0,0.25);z-index:999;">^</button>
+<script>
+  (function(){
+    var btn = document.getElementById('backToTop');
+    if (!btn) return;
+    window.addEventListener('scroll', function(){
+      btn.style.display = window.scrollY > 400 ? 'block' : 'none';
+    });
+    btn.addEventListener('click', function(){
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  })();
+</script>
+</body>
+</html>
