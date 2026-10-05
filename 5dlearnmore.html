@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#ef5350">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+
+  <title>5D Prediction Game: Rules, Positions & Beginner Guide</title>
+  <link rel="canonical" href="https://dmplaygame.net/5dlearnmore">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="5D Prediction Game: Rules, Positions & Beginner Guide">
+  <meta property="og:description" content="Understand how 5D works — five number positions, exact-match payouts, and how to approach it as a beginner on DM Play.">
+  <meta property="og:url" content="https://dmplaygame.net/5dlearnmore">
+  <meta property="og:image" content="https://dmplaygame.net/dmplay.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="5D Prediction Game: Rules, Positions & Beginner Guide">
+  <meta name="twitter:description" content="Real 5D strategy guide for Indian players on DM Play.">
+  <meta name="twitter:image" content="https://dmplaygame.net/dmplay.png">
+
+  <meta name="description" content="5D prediction game guide. Learn how the five positions work, how payouts are calculated, and how to approach 5D as a beginner on DM Play.">
+
+  <link rel="icon" href="/favicon.ico?v=2" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "How does 5D prediction work?",
+        "acceptedAnswer": { "@type": "Answer", "text": "In each 5D round, five separate digits are drawn — one for each position (A, B, C, D, and E). Each digit ranges from 0 to 9. You predict one or more of those digits. If your predictions match the drawn digits in the correct positions, you win according to the payout table." } },
+      { "@type": "Question", "name": "What are the chances of matching a single 5D position?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Each position is drawn from 10 possible digits (0-9), so matching a single position has a 1-in-10 chance. Matching multiple positions multiplies the difficulty — matching all five positions is a 1-in-100,000 outcome." } },
+      { "@type": "Question", "name": "Can I predict 5D results using patterns?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. Each 5D round draws its digits independently. Previous rounds have no effect on future rounds. Any pattern you notice in past results is coincidental, not predictive." } },
+      { "@type": "Question", "name": "How should I manage my 5D bankroll?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Set a strict session budget before you start, place small bets across many rounds instead of large bets on a few, and stop playing when you hit either your loss limit or gain target." } }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dmplaygame.net/"},
+      {"@type": "ListItem", "position": 2, "name": "5D Prediction Game Guide", "item": "https://dmplaygame.net/5dlearnmore"}
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: #ffffff; color: #1a1a1a; line-height: 1.6; min-height: 100vh;
+      overflow-x: hidden; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeSpeed;
+    }
+    img { max-width: 100%; height: auto; display: block; border: 0; }
+    a { text-decoration: none; color: inherit; }
+    .container { width: 100%; max-width: 1100px; margin: 0 auto; padding: 0 1rem; }
+
+    /* HEADER */
+    .header { background: #ef5350; color: #fff; padding: 0.6rem 0; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; flex-wrap: wrap; }
+    .logo-link { display: inline-block; line-height: 0; }
+    .logo { height: 44px; width: auto; max-width: 160px; object-fit: contain; }
+    .logo-text { font-weight: 800; font-size: 1.2rem; color: #ffffff; display: none; }
+    .nav { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem 0.6rem; font-size: 0.85rem; }
+    .nav a { color: #ffebee; position: relative; padding: 0.45rem 0.85rem; border-radius: 6px; transition: color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease; }
+    .nav a:hover, .nav a:focus { color: #ffffff; background: rgba(255, 255, 255, 0.15); box-shadow: 0 0 8px rgba(255, 255, 255, 0.3); }
+    .nav a.active { color: #ffffff; font-weight: 700; background: rgba(255, 255, 255, 0.22); box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2); }
+    .hamburger { display: none; background: transparent; border: 0; cursor: pointer; padding: 0.5rem; margin-left: auto; border-radius: 8px; transition: background 0.2s ease; }
+    .hamburger:hover, .hamburger:focus { background: rgba(255,255,255,0.2); outline: none; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: #ffebee; margin: 5px 0; border-radius: 2px; transition: transform 0.3s ease, opacity 0.3s ease, background 0.2s ease; }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); background: #ffffff; }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); background: #ffffff; }
+
+    /* HERO */
+    .hero { background: linear-gradient(145deg, #ef5350, #e57373); color: #fff; padding: 2rem 0 2.5rem; text-align: center; }
+    .hero h1 { font-size: 1.8rem; font-weight: 800; line-height: 1.25; margin-bottom: 1rem; }
+    .hero h1 span { display: block; color: #ffebee; font-size: 0.95em; font-weight: 600; margin-top: 0.3rem; }
+    .hero p { font-size: 1rem; color: #ffebee; max-width: 640px; margin: 0 auto 1rem; }
+    .hero-meta { font-size: 0.85rem; color: #ffebee; margin-top: 0.5rem; }
+
+    /* SECTIONS & CARDS */
+    section { padding: 2rem 0; }
+    .section-title { font-size: 1.5rem; font-weight: 800; color: #ef5350; text-align: center; margin-bottom: 1.5rem; transition: transform 0.4s ease, text-shadow 0.4s ease; }
+    .section-title.flash { animation: titleFlash 1.2s ease; }
+    @keyframes titleFlash {
+      0%   { transform: scale(1); text-shadow: none; }
+      20%  { transform: scale(1.08); text-shadow: 0 0 20px rgba(239,83,80,0.6), 0 0 40px rgba(239,83,80,0.3); }
+      50%  { transform: scale(1.05); text-shadow: 0 0 15px rgba(239,83,80,0.5), 0 0 30px rgba(239,83,80,0.25); }
+      100% { transform: scale(1); text-shadow: none; }
+    }
+
+    .card { background: #ffffff; border-radius: 1rem; padding: 1.25rem; box-shadow: 0 4px 16px rgba(239,83,80,0.08); border: 1px solid #ffcdd2; }
+    .card + .card { margin-top: 1.25rem; }
+    .card p { font-size: 0.98rem; color: #1a1a1a; margin-bottom: 0.9rem; }
+    .card p:last-child { margin-bottom: 0; }
+
+    .toc { list-style: none; counter-reset: toc; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0.4rem 1.5rem; margin-top: 0.5rem; }
+    .toc li { counter-increment: toc; position: relative; padding-left: 2rem; font-size: 0.95rem; line-height: 1.6; }
+    .toc li::before { content: counter(toc) "."; position: absolute; left: 0; color: #ef5350; font-weight: 700; }
+    .toc li a { color: #1a1a1a; transition: color 0.2s; }
+    .toc li a:hover { color: #ef5350; text-decoration: underline; }
+
+    .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 0.75rem; border: 1px solid #ffcdd2; background: #ffffff; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; min-width: 280px; }
+    th { background: #ef5350; color: #fff; font-weight: 600; padding: 0.7rem 0.9rem; text-align: left; white-space: nowrap; }
+    td { padding: 0.65rem 0.9rem; border-bottom: 1px solid #ffebee; vertical-align: top; }
+    tr:last-child td { border-bottom: none; }
+
+    .check-list { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0.75rem; margin-top: 1rem; }
+    .check-list li { background: #ffebee; padding: 0.8rem 1rem; border-radius: 0.7rem; border-left: 4px solid #ef5350; font-size: 0.95rem; display: flex; align-items: flex-start; gap: 0.5rem; }
+    .check-list li::before { content: ""; flex-shrink: 0; width: 8px; height: 8px; background: #ef5350; border-radius: 50%; margin-top: 0.55rem; }
+
+    /* MODERN FAQ */
+    .faq-accordion { margin-top: 1rem; display: flex; flex-direction: column; gap: 0.75rem; }
+    .faq-item { position: relative; background: #ffffff; border-radius: 14px; overflow: hidden; border: 1px solid #ffcdd2; box-shadow: 0 2px 8px rgba(239,83,80,0.06); transition: box-shadow 0.3s ease, border-color 0.3s ease, transform 0.3s ease; }
+    .faq-item::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: linear-gradient(180deg, #ef5350, #e57373); opacity: 0; transition: opacity 0.3s ease; }
+    .faq-item:hover { transform: translateY(-2px); border-color: #ef5350; box-shadow: 0 8px 22px rgba(239,83,80,0.14); }
+    .faq-item.open { border-color: #ef5350; box-shadow: 0 8px 24px rgba(239,83,80,0.2); }
+    .faq-item.open::before { opacity: 1; }
+    .faq-question { width: 100%; background: #ffffff; border: 0; text-align: left; font-family: inherit; font-size: 1rem; font-weight: 700; color: #1a1a1a; padding: 1.1rem 1.2rem; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 1rem; transition: background 0.25s ease, color 0.25s ease; -webkit-appearance: none; appearance: none; }
+    .faq-question:hover, .faq-question:focus { background: #ffebee; outline: none; }
+    .faq-item.open .faq-question { color: #ef5350; }
+    .faq-icon { flex-shrink: 0; width: 32px; height: 32px; border-radius: 50%; background: linear-gradient(135deg, #ffebee, #ffcdd2); color: #ef5350; font-weight: 800; font-size: 1.15rem; display: flex; align-items: center; justify-content: center; line-height: 1; transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 2px 6px rgba(239,83,80,0.15); }
+    .faq-item.open .faq-icon { transform: rotate(135deg); background: #ef5350; color: #ffffff; box-shadow: 0 4px 12px rgba(239,83,80,0.4); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.35s ease, opacity 0.3s ease; padding: 0 1.2rem; font-size: 0.94rem; color: #444; line-height: 1.65; background: linear-gradient(180deg, #ffebee 0%, #fff5f5 100%); opacity: 0; }
+    .faq-item.open .faq-answer { max-height: 500px; padding: 0 1.2rem 1.2rem; opacity: 1; }
+
+    /* CTA */
+    .cta-section { text-align: center; padding: 2rem 1.25rem; background: linear-gradient(145deg, #ef5350, #e57373); border-radius: 1rem; color: #fff; }
+    .cta-section h2 { font-size: 1.4rem; font-weight: 800; margin-bottom: 0.6rem; }
+    .cta-section p { font-size: 0.95rem; color: #ffebee; margin-bottom: 1.5rem; }
+    .cta-btn { display: inline-block; background: #ffffff; color: #ef5350; font-weight: 800; font-size: 1.05rem; padding: 0.95rem 2.2rem; border-radius: 50px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); border: 2px solid #ffffff; transition: background 0.2s, transform 0.15s, box-shadow 0.2s; animation: pulse 1.8s infinite; }
+    .cta-btn:hover { background: #ffebee; transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0, 0, 0, 0.25); animation-play-state: paused; }
+    .cta-btn:active { transform: scale(0.97); }
+    .cta-btn .arrow { display: inline-block; margin-left: 6px; animation: nudge 1.2s infinite; }
+    @keyframes pulse {
+      0% { box-shadow: 0 6px 20px rgba(255,255,255,0.3); transform: scale(1); }
+      50% { box-shadow: 0 6px 30px rgba(255,255,255,0.6); transform: scale(1.02); }
+      100% { box-shadow: 0 6px 20px rgba(255,255,255,0.3); transform: scale(1); }
+    }
+    @keyframes nudge {
+      0%, 100% { transform: translateX(0); }
+      50% { transform: translateX(4px); }
+    }
+
+    /* FOOTER */
+    .footer { background: #ef5350; color: #ffebee; padding: 2.5rem 0 1.5rem; margin-top: 2.5rem; }
+    .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.75rem; margin-bottom: 2rem; }
+    .footer-col h4 { color: #ffffff; font-size: 1rem; font-weight: 700; margin-bottom: 0.85rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.3); letter-spacing: 0.02em; }
+    .footer-col p { font-size: 0.88rem; line-height: 1.65; margin-bottom: 0.6rem; }
+    .footer-col p:last-child { margin-bottom: 0; }
+    .footer-col a { color: #ffebee; transition: color 0.2s; }
+    .footer-col a:hover { color: #ffffff; }
+    .footer-links { list-style: none; }
+    .footer-links li { margin-bottom: 0.5rem; }
+    .footer-links a { font-size: 0.88rem; display: inline-block; transition: color 0.2s, padding-left 0.2s; line-height: 1.5; }
+    .footer-links a:hover { color: #ffffff; padding-left: 4px; }
+    .footer-links a::before { content: "› "; color: #ffffff; font-weight: 700; margin-right: 2px; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.3); padding-top: 1.2rem; text-align: center; font-size: 0.85rem; color: #ffebee; }
+    .footer-bottom span { display: block; margin-bottom: 0.3rem; }
+    .footer-bottom span:last-child { margin-bottom: 0; }
+
+    /* MOBILE */
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 1.5rem; }
+      .hero p { font-size: 0.95rem; }
+      .hero { padding: 1.5rem 0 2rem; }
+      .section-title { font-size: 1.3rem; margin-bottom: 1.2rem; }
+      .card { padding: 1rem; }
+      .check-list, .toc { grid-template-columns: 1fr; }
+      .header-inner { flex-direction: row; align-items: center; justify-content: space-between; flex-wrap: nowrap; gap: 0.5rem; position: relative; }
+      .logo { height: 38px; }
+      .hamburger { display: block; }
+      .nav { display: none; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 0; background: #ef5350; padding: 0.5rem 0; margin-top: 0.4rem; border-radius: 0 0 12px 12px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); z-index: 200; font-size: 0.95rem; }
+      .nav.open { display: flex; }
+      .nav a { color: #ffebee; padding: 0.85rem 1.25rem; border-bottom: 1px solid rgba(255, 255, 255, 0.15); text-align: left; width: 100%; border-radius: 0; background: transparent; box-shadow: none; font-weight: 500; }
+      .nav a:last-child { border-bottom: none; }
+      .nav a:hover, .nav a:focus { background: rgba(255,255,255,0.15); color: #ffffff; box-shadow: none; }
+      .nav a.active { background: rgba(255,255,255,0.22); color: #ffffff; font-weight: 700; padding: 0.85rem 1.25rem; box-shadow: inset 3px 0 0 #ffffff, 0 0 12px rgba(255, 255, 255, 0.35); }
+      .footer { padding: 2rem 0 1.25rem; }
+      .footer-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+      .cta-btn { padding: 0.85rem 1.4rem; font-size: 1rem; width: 100%; }
+    }
+
+    @media (max-width: 380px) {
+      .hero h1 { font-size: 1.3rem; }
+      .section-title { font-size: 1.15rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+    }
+
+    .content-visibility { content-visibility: auto; contain-intrinsic-size: 0 500px; }
+    #how-5d-works, #positions, #probability, #bankroll, #mistakes, #payouts, #faq { scroll-margin-top: 80px; }
+  </style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="header">
+  <div class="container header-inner">
+    <a href="/" class="logo-link" aria-label="Dmplay Game Home">
+      <img src="dmplay.png" alt="Dmplay Game Logo" class="logo" width="160" height="44" loading="eager" decoding="async" fetchpriority="high" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+      <span class="logo-text">Dmplay Game</span>
+    </a>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-controls="primaryNav" aria-expanded="false" type="button">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="primaryNav" aria-label="Main navigation">
+      <a href="/">Dmplay</a>
+      <a href="/aboutus">About Us</a>
+      <a href="/disclaimer">Disclaimer</a>
+      <a href="/responsiblegaming">Responsible Gaming</a>
+      <a href="/contactus">Contact Us</a>
+      <a href="/blogs">Blogs</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="container">
+    <h1>5D Prediction Game <span>Rules, Positions & Beginner Guide</span></h1>
+    <p>Five separate digits. One strategic round. Here's how 5D actually works — and how to approach it.</p>
+    <div class="hero-meta">By DM Play Team &nbsp;•&nbsp; 6 min read &nbsp;•&nbsp; October 2026</div>
+  </div>
+</section>
+
+<main class="container">
+
+  <section class="content-visibility">
+    <h2 class="section-title">Table of Contents</h2>
+    <div class="card">
+      <ol class="toc">
+        <li><a href="#how-5d-works" data-toc>How 5D prediction works</a></li>
+        <li><a href="#positions" data-toc>The five positions explained</a></li>
+        <li><a href="#probability" data-toc>Probability and payouts</a></li>
+        <li><a href="#bankroll" data-toc>Bankroll management for 5D</a></li>
+        <li><a href="#mistakes" data-toc>Common 5D mistakes to avoid</a></li>
+        <li><a href="#payouts" data-toc>Payout structure at a glance</a></li>
+        <li><a href="#faq" data-toc>Frequently Asked Questions</a></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="content-visibility">
+    <div class="card">
+      <p>Most players open 5D, see five columns of numbers, and start guessing. That works — until it doesn't.</p>
+      <p>This guide breaks down <strong>how the five positions actually work, what probability really looks like, and how to protect your bankroll</strong> while playing 5D on <a href="/dmplaygame"><strong>DM Play</strong></a>.</p>
+    </div>
+  </section>
+
+  <section class="content-visibility" id="how-5d-works">
+    <h2 class="section-title">How 5D Prediction Works</h2>
+    <div class="card">
+      <p>5D is a prediction game built around <strong>five separate digit positions</strong>. In each round, five digits are drawn — one for each position. Each digit is between 0 and 9.</p>
+      <p>Your job is to predict one or more of those digits. Depending on the bet type you choose, you may predict:</p>
+      <ul class="check-list">
+        <li><strong>A single position</strong> — what digit will show up in position A, B, C, D, or E?</li>
+        <li><strong>Multiple positions</strong> — predict digits across two or more positions</li>
+        <li><strong>The full sequence</strong> — predict all five digits in the exact order</li>
+      </ul>
+      <p style="margin-top:1rem;">The more positions you predict correctly, the higher the payout. But each additional position also multiplies the difficulty.</p>
+    </div>
+  </section>
+
+  <section class="content-visibility" id="positions">
+    <h2 class="section-title">The Five Positions Explained</h2>
+    <div class="card">
+      <p>Each 5D round has five positions, usually labeled A through E (or 1st through 5th). Each position draws one digit from 0 to 9.</p>
+      <div class="table-wrap" style="margin-top:1rem;">
+        <table>
+          <thead>
+            <tr><th>Position</th><th>Digit Range</th><th>Probability of Match</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Position A</strong></td><td>0-9</td><td>1 in 10</td></tr>
+            <tr><td><strong>Position B</strong></td><td>0-9</td><td>1 in 10</td></tr>
+            <tr><td><strong>Position C</strong></td><td>0-9</td><td>1 in 10</td></tr>
+            <tr><td><strong>Position D</strong></td><td>0-9</td><td>1 in 10</td></tr>
+            <tr><td><strong>Position E</strong></td><td>0-9</td><td>1 in 10</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="margin-top:1rem;"><strong>Important:</strong> Each position is drawn independently. The digit in position A has no influence on position B. There's no connection between the digits.</p>
+      <p>When you predict multiple positions, your probability of matching all of them multiplies:</p>
+      <ul class="check-list">
+        <li>Matching <strong>1 position</strong>: 1 in 10</li>
+        <li>Matching <strong>2 positions</strong>: 1 in 100</li>
+        <li>Matching <strong>3 positions</strong>: 1 in 1,000</li>
+        <li>Matching <strong>4 positions</strong>: 1 in 10,000</li>
+        <li>Matching <strong>5 positions</strong>: 1 in 100,000</li>
+      </ul>
+      <p style="margin-top:1rem;">This is why full-sequence 5D bets pay so much — they're incredibly rare.</p>
+    </div>
+  </section>
+
+  <section class="content-visibility" id="probability">
+    <h2 class="section-title">Probability and Payouts</h2>
+    <div class="card">
+      <p>5D payouts are structured around probability. Higher probability outcomes pay less; lower probability outcomes pay more.</p>
+      <p>For example:</p>
+      <ul class="check-list">
+        <li><strong>Position bet</strong> — Matching one specific position pays roughly 9-10× your stake</li>
+        <li><strong>Two-position bet</strong> — Matching two positions pays roughly 90-100× your stake</li>
+        <li><strong>Three-position bet</strong> — Matching three positions pays roughly 900-1,000× your stake</li>
+        <li><strong>Full-sequence bet</strong> — Matching all five pays 10,000×+ your stake</li>
+      </ul>
+      <p style="margin-top:1rem;">Exact payouts vary by platform. Always check the current payout table before placing a bet.</p>
+      <p><strong>Key insight:</strong> The math behind 5D means the house has an edge on every bet type. Bigger payouts = lower probability. There's no "smart" bet type that flips the math in your favour.</p>
+    </div>
+  </section>
+
+  <section class="content-visibility" id="bankroll">
+    <h2 class="section-title">Bankroll Management for 5D</h2>
+    <div class="card">
+      <p>Since you can't change the math, the only thing you control is how you manage your money. Here's a framework that works:</p>
+      <ol style="margin: 0.75rem 0 0 1.25rem;">
+        <li style="margin-bottom: 0.75rem;"><strong>Set a session budget</strong> — the maximum you're willing to lose in one sitting, without regret.</li>
+        <li style="margin-bottom: 0.75rem;"><strong>Split into smaller bets</strong> — 20 bets of ₹10 instead of 2 bets of ₹100. This extends your session and prevents a single bad call from draining everything.</li>
+        <li style="margin-bottom: 0.75rem;"><strong>Stop at 50% loss</strong> — if you've lost half your budget, walk away. Don't chase.</li>
+        <li style="margin-bottom: 0.75rem;"><strong>Set a gain target</strong> — if you double your budget, cash out. Don't give it back chasing more.</li>
+        <li><strong>Time your sessions</strong> — 30 minutes max, then stop and walk away regardless of outcome.</li>
+      </ol>
+      <p style="margin-top:1rem;">This won't make you win — but it prevents the pattern that wipes out most players: a series of losses followed by "one big bet" that never lands.</p>
+    </div>
+  </section>
+
+  <section class="content-visibility" id="mistakes">
+    <h2 class="section-title">Common 5D Mistakes to Avoid</h2>
+    <div class="card">
+      <p>These are the mistakes that cost 5D players the most:</p>
+      <ul class="check-list">
+        <li><strong>Chasing long-shot full sequences</strong> — 1-in-100,000 odds mean you'll lose far more often than you win</li>
+        <li><strong>Betting bigger after wins</strong> — a win doesn't change the odds of the next round</li>
+        <li><strong>Betting bigger after losses</strong> — same reason, but worse for your bankroll</li>
+        <li><strong>Using "pattern" systems</strong> — 5D digits are random and independent per position; patterns don't predict outcomes</li>
+        <li><strong>Playing tired or emotional</strong> — you'll place worse bets and stop less often</li>
+        <li><strong>No session limits</strong> — 5D rounds are quick, and it's easy to lose track of time and money</li>
+      </ul>
+      <p style="margin-top:1rem;">If any of these describe your behaviour, take a break and reset.</p>
+    </div>
+  </section>
+
+  <section class="content-visibility" id="payouts">
+    <h2 class="section-title">Payout Structure at a Glance</h2>
+    <div class="card">
+      <p>Here's a simplified view of typical 5D payout structures:</p>
+      <div class="table-wrap" style="margin-top:1rem;">
+        <table>
+          <thead>
+            <tr><th>Bet Type</th><th>Probability</th><th>Typical Payout</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1 Position</td><td>1 in 10</td><td>~9× stake</td></tr>
+            <tr><td>2 Positions</td><td>1 in 100</td><td>~90× stake</td></tr>
+            <tr><td>3 Positions</td><td>1 in 1,000</td><td>~900× stake</td></tr>
+            <tr><td>4 Positions</td><td>1 in 10,000</td><td>~9,000× stake</td></tr>
+            <tr><td>5 Positions (Full)</td><td>1 in 100,000</td><td>~90,000× stake</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="margin-top:1rem;"><em>Note: Actual payouts vary by platform. Always verify on the live payout table.</em></p>
+    </div>
+  </section>
+
+  <section class="content-visibility" id="faq">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <div class="card">
+      <div class="faq-accordion">
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>How does 5D prediction work?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            In each 5D round, five separate digits are drawn — one for each position (A, B, C, D, and E). Each digit ranges from 0 to 9. You predict one or more of those digits. If your predictions match the drawn digits in the correct positions, you win according to the payout table.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>What are the chances of matching a single 5D position?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            Each position is drawn from 10 possible digits (0-9), so matching a single position has a 1-in-10 chance. Matching multiple positions multiplies the difficulty — matching all five positions is a 1-in-100,000 outcome.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Can I predict 5D results using patterns?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            No. Each 5D round draws its digits independently. Previous rounds have no effect on future rounds. Any pattern you notice in past results is coincidental, not predictive.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>How should I manage my 5D bankroll?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            Set a strict session budget before you start, place small bets across many rounds instead of large bets on a few, and stop playing when you hit either your loss limit or gain target.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="content-visibility">
+    <div class="cta-section">
+      <h2>Ready to Play 5D?</h2>
+      <p>Register your DM Play account in under 60 seconds and start playing 5D.</p>
+      <a href="/dmplayregistration" class="cta-btn">
+        Click Here to Register
+        <span class="arrow">→</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="content-visibility">
+    <div class="card" style="background:#ffebee;">
+      <p style="font-size:0.88rem;color:#666;margin-bottom:0;">
+        <strong>Play responsibly.</strong> 5D is a game of chance. No strategy guarantees a win. Set a strict budget, never bet more than you can afford to lose, and treat the game as entertainment. If you need support, see our <a href="/responsiblegaming" style="color:#ef5350;text-decoration:underline;">Responsible Gaming page</a>.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-col">
+        <h4>Dmplay Game</h4>
+        <p><a href="/"><strong>Dmplay Game</strong></a> — Your trusted guide for Dmplay Login, Games, App, Registration and latest updates. Clear, reliable information in one place.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Helpful Guides</h4>
+        <ul class="footer-links">
+          <li><a href="/#login">Dmplay Login Help</a></li>
+          <li><a href="/#register">Registration Guide</a></li>
+          <li><a href="/#apk-download">APK Installation Guide</a></li>
+          <li><a href="/#safety">Account Safety Tips</a></li>
+          <li><a href="/#games">Game Information</a></li>
+          <li><a href="/responsiblegaming">Responsible Gaming</a></li>
+          <li><a href="/#faq">Frequently Asked Questions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Legal &amp; Important Pages</h4>
+        <ul class="footer-links">
+          <li><a href="/privacy">Privacy Policy</a></li>
+          <li><a href="/terms">Terms &amp; Conditions</a></li>
+          <li><a href="/disclaimer">Disclaimer</a></li>
+          <li><a href="/responsiblegaming">Responsible Gaming</a></li>
+          <li><a href="/aboutus">About Us</a></li>
+          <li><a href="/contactus">Contact Us</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 <a href="/">Dmplay Game</a></span>
+      <span>Gaming involves financial risk. Play responsibly. 18+ only.</span>
+    </div>
+  </div>
+</footer>
+
+<button id="backToTop" aria-label="Back to top" style="position:fixed;bottom:20px;right:20px;width:46px;height:46px;border-radius:50%;background:#ef5350;color:#fff;border:0;cursor:pointer;display:none;font-size:22px;line-height:1;box-shadow:0 4px 12px rgba(0,0,0,0.25);z-index:999;">^</button>
+
+<script>
+  (function () {
+    var hamburgerBtn = document.getElementById('hamburgerBtn');
+    var primaryNav = document.getElementById('primaryNav');
+    if (!hamburgerBtn || !primaryNav) return;
+    function openMenu() { primaryNav.classList.add('open'); hamburgerBtn.classList.add('open'); hamburgerBtn.setAttribute('aria-expanded', 'true'); }
+    function closeMenu() { primaryNav.classList.remove('open'); hamburgerBtn.classList.remove('open'); hamburgerBtn.setAttribute('aria-expanded', 'false'); }
+    function toggleMenu() { if (primaryNav.classList.contains('open')) closeMenu(); else openMenu(); }
+    hamburgerBtn.addEventListener('click', function (e) { e.stopPropagation(); toggleMenu(); });
+    primaryNav.querySelectorAll('a').forEach(function (link) { link.addEventListener('click', function () { closeMenu(); }); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && primaryNav.classList.contains('open')) { closeMenu(); hamburgerBtn.focus(); } });
+    document.addEventListener('click', function (e) {
+      if (!primaryNav.classList.contains('open')) return;
+      if (primaryNav.contains(e.target) || hamburgerBtn.contains(e.target)) return;
+      closeMenu();
+    });
+    window.addEventListener('resize', function () { if (window.innerWidth > 640 && primaryNav.classList.contains('open')) closeMenu(); });
+  })();
+</script>
+
+<script>
+  (function () {
+    var faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(function (item) {
+      var btn = item.querySelector('.faq-question');
+      if (!btn) return;
+      btn.addEventListener('click', function () {
+        var isOpen = item.classList.contains('open');
+        faqItems.forEach(function (other) {
+          other.classList.remove('open');
+          var otherBtn = other.querySelector('.faq-question');
+          if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); }
+      });
+    });
+  })();
+</script>
+
+<script>
+  (function () {
+    var tocLinks = document.querySelectorAll('[data-toc]');
+    tocLinks.forEach(function (link) {
+      link.addEventListener('click', function () {
+        var href = link.getAttribute('href');
+        if (!href || href.charAt(0) !== '#') return;
+        var target = document.querySelector(href);
+        if (!target) return;
+        var title = target.querySelector('.section-title');
+        if (title) {
+          title.classList.remove('flash');
+          void title.offsetWidth;
+          setTimeout(function () { title.classList.add('flash'); }, 300);
+          setTimeout(function () { title.classList.remove('flash'); }, 1800);
+        }
+      });
+    });
+  })();
+</script>
+
+<script>
+  (function(){
+    var btn = document.getElementById('backToTop');
+    if (!btn) return;
+    window.addEventListener('scroll', function(){ btn.style.display = window.scrollY > 400 ? 'block' : 'none'; });
+    btn.addEventListener('click', function(){ window.scrollTo({ top: 0, behavior: 'smooth' }); });
+  })();
+</script>
+
+</body>
+</html>
