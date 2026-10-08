@@ -1169,5 +1169,31 @@
   })();
 </script>
 
+<script>
+  // Fix hash scroll on page load (especially for Ctrl+Click new tabs)
+  (function () {
+    function scrollToHash() {
+      if (window.location.hash) {
+        var target = document.querySelector(window.location.hash);
+        if (target) {
+          // Wait a moment for layout to settle
+          setTimeout(function () {
+            var headerOffset = 80; // account for sticky header
+            var elementPosition = target.getBoundingClientRect().top;
+            var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+          }, 100);
+        }
+      }
+    }
+
+    // Run on page load
+    window.addEventListener('load', scrollToHash);
+
+    // Also run when the hash changes (browser back/forward)
+    window.addEventListener('hashchange', scrollToHash);
+  })();
+</script>
+
 </body>
 </html>
