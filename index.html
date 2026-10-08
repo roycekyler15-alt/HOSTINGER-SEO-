@@ -79,6 +79,89 @@
     .hero h1 { font-size: 1.8rem; font-weight: 800; line-height: 1.25; margin-bottom: 1rem; }
     .hero h1 span { display: block; color: #ffebee; font-size: 0.95em; font-weight: 600; margin-top: 0.3rem; }
     .hero p { font-size: 1rem; color: #ffebee; max-width: 640px; margin: 0 auto 1rem; }
+        /* ===== MODERN GIFT CODE CLAIM ===== */
+    .gift-claim-wrap {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 0.75rem auto 1.25rem;
+      padding: 0 1rem;
+      box-sizing: border-box;
+    }
+    .gift-claim-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.55rem;
+      width: 100%;
+      max-width: 380px;
+      padding: 1rem 1.25rem 0.85rem;
+      background: rgba(255, 255, 255, 0.14);
+      border-radius: 16px;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.25s ease, background 0.25s ease;
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
+    }
+    .gift-claim-box:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 34px rgba(0, 0, 0, 0.2);
+      background: rgba(255, 255, 255, 0.2);
+    }
+    .gift-claim-box:active { transform: scale(0.98); }
+    .gift-claim-label {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #fff;
+      opacity: 0.9;
+    }
+    .gift-sparkle {
+      color: #ffd54f;
+      font-size: 0.75rem;
+      animation: sparklePulse 2.4s ease-in-out infinite;
+    }
+    @keyframes sparklePulse {
+      0%, 100% { opacity: 0.6; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.25); }
+    }
+    .gift-claim-code {
+      display: inline-block;
+      padding: 0.6rem 1.15rem;
+      background: #ffffff;
+      color: #ef5350;
+      border-radius: 10px;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 1.05rem;
+      font-weight: 800;
+      letter-spacing: 2.5px;
+      word-break: break-all;
+      text-align: center;
+      max-width: 100%;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+      transition: background 0.25s ease, color 0.25s ease, transform 0.2s ease;
+    }
+    .gift-claim-box:hover .gift-claim-code { transform: scale(1.02); }
+    .gift-claim-hint {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: #fff;
+      opacity: 0.75;
+      transition: opacity 0.25s ease;
+    }
+    .gift-claim-box:hover .gift-claim-hint { opacity: 1; }
+    .gift-claim-box.copied { background: rgba(46, 125, 50, 0.85); }
+    .gift-claim-box.copied .gift-claim-code { background: #ffffff; color: #2e7d32; }
 
     .badges { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; margin: 1.2rem 0; }
     .badge { background: rgba(255,255,255,0.2); padding: 0.35rem 0.9rem; border-radius: 40px; font-size: 0.8rem; border: 1px solid rgba(255,255,255,0.35); white-space: nowrap; }
@@ -253,6 +336,27 @@
   <div class="container">
     <h1><a href="/">Dmplay Game</a> <span>Play WinGo, Aviator &amp; Colour Prediction</span></h1>
     <p>A modern, secure, and trusted gaming platform. Fast withdrawals, daily rewards, and real winnings on every prediction.</p>
+        
+    
+    <!-- GIFT CODE CLAIM -->
+    <div class="gift-claim-wrap">
+      <div class="gift-claim-box" id="giftClaimBox" role="button" tabindex="0" aria-label="Copy Dmplay gift code">
+        <div class="gift-claim-label">
+          <span class="gift-sparkle">✦</span>
+          <span>DMPLAY GIFT CODE</span>
+          <span class="gift-sparkle">✦</span>
+        </div>
+        <div class="gift-claim-code" id="giftCodeText">8H88HDDH847SHBUESJU3SB3</div>
+        <div class="gift-claim-hint" id="giftHint">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+          </svg>
+          <span>Tap to copy</span>
+        </div>
+      </div>
+    </div>
+    
     <div class="badges">
       <span class="badge">12MB App</span>
       <span class="badge">Bonus up to ₹100</span>
@@ -1015,5 +1119,61 @@ faq">Frequently Asked Questions</a></li>
     });
   })();
 </script>
+
+<!-- GIFT CODE COPY SCRIPT -->
+<script>
+  (function () {
+    var box = document.getElementById('giftClaimBox');
+    var codeText = document.getElementById('giftCodeText');
+    var hint = document.getElementById('giftHint');
+    if (!box || !codeText || !hint) return;
+
+    var originalHintHTML = hint.innerHTML;
+
+    function showCopied() {
+      box.classList.add('copied');
+      var originalCode = codeText.textContent;
+      codeText.textContent = 'Copied!';
+      hint.innerHTML = '<span>Code saved to clipboard</span>';
+      setTimeout(function () {
+        box.classList.remove('copied');
+        codeText.textContent = originalCode;
+        hint.innerHTML = originalHintHTML;
+      }, 1800);
+    }
+
+    function copyCode() {
+      var text = codeText.textContent.trim();
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(showCopied).catch(function () {
+          fallbackCopy(text, showCopied);
+        });
+      } else {
+        fallbackCopy(text, showCopied);
+      }
+    }
+
+    function fallbackCopy(text, callback) {
+      var temp = document.createElement('textarea');
+      temp.value = text;
+      temp.style.position = 'fixed';
+      temp.style.left = '-9999px';
+      document.body.appendChild(temp);
+      temp.select();
+      try { document.execCommand('copy'); } catch (e) {}
+      document.body.removeChild(temp);
+      callback();
+    }
+
+    box.addEventListener('click', copyCode);
+    box.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        copyCode();
+      }
+    });
+  })();
+</script>
+
 </body>
 </html>
